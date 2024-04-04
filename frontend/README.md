@@ -6,6 +6,9 @@ This application allows users to create todos. All todos are stored in state at 
 
 *** ENVIRONMENT VARIABLE MUST BE SET BEFORE USE ***
 ```
+FILE: /docker-compose.yaml
+VITE_CLERK_PUBLISHABLE_KEY=YOUR_CLERK_KEY_HERE
+
 FILE: /frontend/.env.local
 VITE_CLERK_PUBLISHABLE_KEY=YOUR_CLERK_KEY_HERE
 ```
