@@ -50,7 +50,7 @@ VITE_CLERK_PUBLISHABLE_KEY=YOUR_CLERK_KEY_HERE
 - **Input:**
   - Todo ID
 - **Output:**
-  - todo details or error response
+  - Todo details or error response
 
 
 ## Payment Processing
