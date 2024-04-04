@@ -7,4 +7,4 @@ services:
     ports:
       - "5173:5173"
     environment:
-      - VITE_CLERK_PUBLISHABLE_KEY=YOUR_CLERK_KEY_HERE
+      - VITE_CLERK_PUBLISHABLE_KEY=pk_test_cG9zc2libGUtY3ViLTc2LmNsZXJrLmFjY291bnRzLmRldiQ

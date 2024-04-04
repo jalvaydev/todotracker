@@ -6,12 +6,11 @@ This application allows users to create todos. All todos are stored in state at 
 
 **ENVIRONMENT VARIABLE MUST BE SET BEFORE USE**
 ```
-FILE: /docker-compose.yaml
-VITE_CLERK_PUBLISHABLE_KEY=YOUR_CLERK_KEY_HERE
-
 FILE: /frontend/.env.local
-VITE_CLERK_PUBLISHABLE_KEY=YOUR_CLERK_KEY_HERE
+VITE_CLERK_PUBLISHABLE_KEY=pk_test_cG9zc2libGUtY3ViLTc2LmNsZXJrLmFjY291bnRzLmRldiQ
 ```
+You can create your own key at [Clerk](https://www.clerk.com), I have provided my publishable key before for demo purposes.
+The `docker-compose.yaml` file already has the key included.
 
 ## Expected API Endpoints
 
