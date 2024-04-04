@@ -9,7 +9,7 @@ import { Button } from "./ui/button";
 
 function Navbar() {
   return (
-    <div className="container flex flex-col sm:flex-row h-14 max-w-screen-2xl items-center">
+    <div className="container flex flex-col items-center sm:flex-row h-14 max-w-screen-2xl">
       <a
         href="/"
         className="text-3xl font-bold leading-tight tracking-tight text-primary"

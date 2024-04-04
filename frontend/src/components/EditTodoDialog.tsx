@@ -45,7 +45,7 @@ function EditTodoDialog({ todo }: EditTodoDialogProps) {
           </DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
-          <div className="grid grid-cols-4 items-center gap-4">
+          <div className="grid items-center grid-cols-4 gap-4">
             <Label htmlFor="task" className="text-right">
               Task
             </Label>
@@ -56,7 +56,7 @@ function EditTodoDialog({ todo }: EditTodoDialogProps) {
               className="col-span-3"
             />
           </div>
-          <div className="grid grid-cols-4 items-center gap-4">
+          <div className="grid items-center grid-cols-4 gap-4">
             {todo.photoFile && !photoFile ? (
               <>
                 <Label htmlFor="photo" className="col-start-1 text-right">

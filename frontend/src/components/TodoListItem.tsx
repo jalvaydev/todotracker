@@ -23,12 +23,12 @@ function TodoListItem({ todo }: TodoListItemProps) {
           type="checkbox"
           checked={todo.completed}
           onChange={() => handleCompleteTodo(todo)}
-          className="z-10 h-6 w-6 rounded-full border-gray-300 my-auto text-indigo-600 focus:ring-indigo-600"
+          className="z-10 w-6 h-6 my-auto text-indigo-600 border-gray-300 rounded-full focus:ring-indigo-600"
         />
-        <div className="min-w-0 flex-auto ">
-          <p className="text-sm text-left font-semibold leading-6 text-gray-900">
+        <div className="flex-auto min-w-0 ">
+          <p className="text-sm font-semibold leading-6 text-left text-gray-900">
             <DialogTrigger>
-              <span className="absolute inset-x-0 -top-px bottom-0" />
+              <span className="absolute inset-x-0 bottom-0 -top-px" />
             </DialogTrigger>
             {todo.task}
           </p>
@@ -41,7 +41,7 @@ function TodoListItem({ todo }: TodoListItemProps) {
           </div>
         </div>
       </div>
-      <div className="flex shrink-0 items-center gap-x-4">
+      <div className="flex items-center shrink-0 gap-x-4">
         <div className="hidden sm:flex sm:flex-col sm:items-end">
           {todo.completed ? (
             <Badge className="bg-emerald-500">Completed</Badge>

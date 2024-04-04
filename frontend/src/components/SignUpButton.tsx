@@ -105,7 +105,7 @@ function SignUpButton({ children }: SignUpButtonProps) {
         <DialogContent className="sm:max-w-xl">
           <form onSubmit={handleSubmit}>
             <DialogHeader>
-              <DialogTitle className="text-center text-2xl">
+              <DialogTitle className="text-2xl text-center">
                 Sign up
               </DialogTitle>
               <DialogDescription className="text-center">
@@ -113,7 +113,7 @@ function SignUpButton({ children }: SignUpButtonProps) {
               </DialogDescription>
             </DialogHeader>
             <div className="grid gap-4 py-4">
-              <div className="grid grid-cols-4 items-center gap-4">
+              <div className="grid items-center grid-cols-4 gap-4">
                 <Label htmlFor="email-address" className="text-right">
                   Email
                 </Label>
@@ -125,12 +125,12 @@ function SignUpButton({ children }: SignUpButtonProps) {
                   className="col-span-3"
                 />
                 {error && error.paramName === "email_address" && (
-                  <div className="col-start-2 col-span-3 text-red-500 -mt-2">
+                  <div className="col-span-3 col-start-2 -mt-2 text-red-500">
                     {error.message}
                   </div>
                 )}
               </div>
-              <div className="grid grid-cols-4 items-center gap-4">
+              <div className="grid items-center grid-cols-4 gap-4">
                 <Label htmlFor="password" className="col-start-1 text-right">
                   Password
                 </Label>
@@ -141,7 +141,7 @@ function SignUpButton({ children }: SignUpButtonProps) {
                   className="col-span-3"
                 />
                 {error && error.paramName === "password" && (
-                  <div className="col-start-2 col-span-3 text-red-500 -mt-2">
+                  <div className="col-span-3 col-start-2 -mt-2 text-red-500">
                     {error.message}
                   </div>
                 )}
@@ -158,7 +158,7 @@ function SignUpButton({ children }: SignUpButtonProps) {
         <DialogContent className="sm:max-w-xl">
           <form onSubmit={onPressVerify}>
             <DialogHeader>
-              <DialogTitle className="text-center text-2xl">
+              <DialogTitle className="text-2xl text-center">
                 Verify Email Address
               </DialogTitle>
               <DialogDescription className="text-center">
@@ -182,7 +182,7 @@ function SignUpButton({ children }: SignUpButtonProps) {
               </InputOTP>
             </div>
             {error && error.paramName === "code" && (
-              <div className="text-center col-span-3 text-red-500 -mt-2">
+              <div className="col-span-3 -mt-2 text-center text-red-500">
                 {error.message === "is incorrect"
                   ? "Incorrect code"
                   : error.message}

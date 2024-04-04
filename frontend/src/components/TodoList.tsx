@@ -17,7 +17,7 @@ function TodoList() {
           ))}
         </ul>
       ) : (
-        <div className="text-center my-auto text-2xl font-bold leading-tight tracking-tight text-primary">
+        <div className="my-auto text-2xl font-bold leading-tight tracking-tight text-center text-primary">
           No todos have been added.
         </div>
       )}
